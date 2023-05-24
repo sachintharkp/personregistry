@@ -46,3 +46,19 @@ You can run the project using PersonRegistry.class. This class only created to c
 ### Test the Application
 You can see all the test cases covered by this application in PersonRegistryServiceTest.class
 
+## Create a Person
+#### Reguired fields and Validations
+***Social number and name are required fields to create a person .If these fields not provided SocialNumberMandatoryException will throw.
+***If user try to create person with exisiting social number, SocialNumberAlreadyExistException will throw. 
+
+
+## Get a Person
+#### Reguired fields and Validations
+**Valid Social number should provide to get a person , if not PersonNotFoundException exception will throw.
+**If user tries to retrieve a person without socail number , SocialNumberMandatoryException exception will throw.
+
+## Get a Person oldest child
+#### Reguired fields and Validations
+**Valid Social number should provide to get a person , if not PersonNotFoundException exception will throw.
+**If user tries to retrieve a person without socail number , SocialNumberMandatoryException exception will throw.
+**If a user tries to get old child when there is no child exist for the given person NoChildRecordExistException exception will throw.
